@@ -3,8 +3,8 @@
   @include tablet {
     width: 568px;
   }
-  @media screen and (max-height: 909px) {
-    top: 0;
+  @media screen and (max-height: 1037px) {
+    top: 15px;
     transform: translate(-50%);
   }
 }
