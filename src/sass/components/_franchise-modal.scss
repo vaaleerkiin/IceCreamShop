@@ -6,6 +6,10 @@
     width: 568px;
     height: 668px;
   }
+  @media screen and (max-height: 715px) {
+    top: 7px;
+    transform: translate(-50%);
+  }
 }
 
 .btn-test {

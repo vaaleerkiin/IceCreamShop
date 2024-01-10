@@ -1,13 +1,10 @@
 .modal__read-more {
-  z-index: 2;
-  max-width: 530px;
-  @include tablet {
-    max-width: 568px;
-    height: 449px;
-    @media screen and (max-height: 669px) {
-      top: 7%;
-    }
-  }
+  min-width: 280px;
+  min-height: 365px;
+
+  // @media screen and (max-height: 669px) {
+  //   top: 7%;
+  // }
 }
 
 .youtube-video {

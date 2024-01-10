@@ -1,10 +1,10 @@
 .ingredients .modal {
   padding: 30px 20px;
-  @include tablet {
-    width: 568px;
-  }
+  width: calc(100% - 15px);
+  max-width: 568px;
+
   @media screen and (max-height: 1037px) {
-    top: 15px;
+    top: 7px;
     transform: translate(-50%);
   }
 }

@@ -1,19 +1,38 @@
 // Buy now modal
-.modal1-list {
-  @include tablet {
-    display: flex;
+
+.modal__buy-now {
+  padding: 30px 20px;
+  width: calc(100% - 15px);
+  max-width: 568px;
+
+  @media screen and (max-height: 591px) and (min-width: 519px) {
+    top: 7px;
+    transform: translate(-50%);
   }
+  @media screen and (max-height: 732px) and (max-width: 511px) {
+    top: 7px;
+    transform: translate(-50%);
+  }
+  @media screen and (max-width: 354px) {
+    top: 7px;
+    transform: translate(-50%);
+  }
+}
+
+.modal1-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 32;
+  row-gap: 8px;
+  margin-bottom: 16px;
+  overflow: hidden;
 }
 .modal1__item {
   position: relative;
+  max-height: 190px;
 }
-.modal1__item + .modal1__item {
-  margin-top: -50px;
-  @include tablet {
-    margin-left: 32px;
-    margin-top: 0;
-  }
-}
+
 .modal1-picture {
   position: absolute;
   z-index: 1;
@@ -91,9 +110,7 @@
   color: #131313;
   margin-top: 96px;
 }
-.modal__form--other-margin {
-  margin-top: -50px;
-}
+
 .modal__btn {
   width: 114px;
   height: 42px;
